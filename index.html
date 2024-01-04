@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website of Websites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="container">
+    <div class="row">
+        <div class="col-12 col-lg-6 my-5 px-5">
+            <form action="/nowhere" id="maker-form">
+                <legend class="my-2 text-center">Let's make a website!</legend>
+                <div class="d-flex flex-row justify-content-between my-2">
+                    <button type="button" class="m-3 btn btn-secondary" id="useDefaults">Use default content</button>
+                    <button type="button" class="m-3 btn btn-danger" id="clearOutput" disabled>Clear</button>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control mb-2" type="text" name="tagName" id="tagName" placeholder="Tag to insert">
+                    <div class="my-3">
+                        <div class="mx-2">
+                            <button type="button" class="mb-1 btn btn-success" id="addAttribute"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                              </svg> Attribute</button>
+                            <div id="attributePrompts"></div>
+                        </div>
+                    </div>
+                    <textarea class="form-control" name="tagContents" id="tagContents" cols="30" rows="10" placeholder="Contents..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="col-4 btn btn-outline-primary">Insert Element</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-6 container my-5" id="preview">
+            <!-- comment all of this stuff out -->
+            <!-- <h1>Hello, world!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque facilis excepturi ut qui voluptatibus asperiores vitae obcaecati numquam nemo, dolore vel, cumque voluptatem? Officiis, cum eveniet facere eius porro perspiciatis.</p>
+            <h2>Subheading!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, molestias autem voluptas provident officiis velit sit dolore, ab amet repudiandae architecto deleniti obcaecati doloremque inventore, veritatis quia unde placeat neque?
+            Obcaecati laudantium corporis eos, laboriosam eum animi, amet facilis quos temporibus autem minus alias inventore porro laborum quo. Laborum porro id assumenda vero iste eius quibusdam consequuntur excepturi dignissimos rem!</p> -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
